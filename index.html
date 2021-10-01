@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/global.css"/>
 	</head>
 	<body>
-		<div class="container-fluid menupartial">
+		<div class="container-fluid menupartial" style="background:white;">
 		<header>
 			<div class="wrapper">
 				<div class="row">
@@ -27,20 +27,24 @@
 					</div>
 					<div class="col-6">
 						<div class="user">
-							<div class="dropdown show">
-								<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 									Luke Chesser
-								</a>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								  <a class="dropdown-item" href="#">Edit my profile</a>
-								  <a class="dropdown-item" href="#">Logout</a>
-								</div>
-							  </div>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								  <li><a class="dropdown-item" href="#">Edit my profile</a></li>
+								  <li><a class="dropdown-item" href="#">Logout</a></li>
+								</ul>
+							</div>
 						</div>		
 					</div>
 				</div>
 			</div>
 		</header>
+		</div>
+		<div class="row">
+			<div class="col" style="padding-top:2.5em;">
+			</div>
 		</div>
 		<div class="container">
 		<div class="row">
@@ -79,39 +83,29 @@
 						<div class="stats-links">
 							<div class="row">
 								<div class="col-sm-10">
-									<section class="stats">
-										<div class="row">
-											<div class="col-lg-2">
-												<span>2 Playlists</span>
-											</div>
-											<div class="col-lg-2">
-												<span>4 Reviews</span>
-											</div>
-											<div class="col-lg-2">
-												<span>6 Followers</span>		
-											</div>
-											<div class="col-lg-2">
-												<span>13 Following</span>
-											</div>
-										</div>
-									</section>		
+									<ul class="list-group list-group-horizontal-sm">
+										<li class="list-group-item">2 Playlists</li>
+										<li class="list-group-item">4 Reviews</li>
+										<li class="list-group-item">6 Followers</li>
+										<li class="list-group-item">13 Following</li>
+									</ul>	
 								</div>
 								<div class="col-sm-2">
 									<div class="links">
-										<div>
-											<a href="#">Collection</a>
-											<a href="#">History</a>
-										</div>
+										<ul class="list-group list-group-horizontal-sm">
+											<li class="list-group-item">Collection</li>
+											<li class="list-group-item">History</li>
+										</ul>	
 									</div>
 								</div>
 							  </div>
 						</div>
 					</header>
 					<div class="row">
-						<div class="col-8">
+						<div class="col">
 							<h2>Top Album</h2>
 						</div>
-						<div class="col-4">
+						<div class="col offset-md-8">
 							<div>
 								<a class="station" href="#">Start Station</a>
 							</div>		
